@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#sidebar {
+    background-color: cornflowerblue;
+    grid-row-end: span 2;
+}
+
+#header {
+    background-color: rgb(33, 70, 139);
+    grid-column: span 2;
+}
+
+#main {
+    background-color: midnightblue;
+}
+
+#extra {
+    background-color: rgb(13, 13, 59);
+}
+
+.logo {
+    padding: 10px;
+}
+.sbItem {
+    padding: 10px;
+    height: min-content;
+}
+
+.home, .settings {
+    margin-top: 20px;
+}
