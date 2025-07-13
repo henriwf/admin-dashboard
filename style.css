@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
 }
 
 html, body {
@@ -15,32 +16,63 @@ body {
     grid-template-rows: 1fr 4fr;
 }
 
+.sbItem, .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+}
+
+.sbItem svg {
+  width: 20px; 
+  fill: white;
+  flex-shrink: 0;
+}
+
+.logo svg {
+  width: 48px;
+  height: 38px;
+  fill: white;
+}
+
+.logo span {
+    font-size: 22px;
+}
+
+.sbItem span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px
+}
+
 #sidebar {
-    background-color: cornflowerblue;
+    background-color: rgb(25, 146, 212);
     grid-row-end: span 2;
+    color: white;
+    font-weight: 600;
 }
 
 #header {
-    background-color: rgb(33, 70, 139);
+    background-color: rgb(255, 255, 255);
     grid-column: span 2;
 }
 
 #main {
-    background-color: midnightblue;
+    background-color: rgba(226,232,240);
 }
 
 #extra {
-    background-color: rgb(13, 13, 59);
+    background-color: rgb(226,232,240);
 }
 
-.logo {
-    padding: 10px;
-}
-.sbItem {
-    padding: 10px;
-    height: min-content;
-}
-
-.home, .settings {
-    margin-top: 20px;
+.sbItem.home, .sbItem.settings {
+    padding-top: 50px;
 }
