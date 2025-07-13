@@ -63,6 +63,27 @@ body {
 #header {
     background-color: rgb(255, 255, 255);
     grid-column: span 2;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 3fr 1fr 1fr 2fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+#left-side {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.searchBar {
+    display: flex;
+    gap: 30px;
+}
+
+#searchIcon {
+    width: 30px;
 }
 
 #main {
@@ -75,4 +96,19 @@ body {
 
 .sbItem.home, .sbItem.settings {
     padding-top: 50px;
+}
+
+input#search {
+    width: 400px;
+}
+
+div.username {
+    text-align: center;
+}
+.bell {
+    width: 20px;
+}
+
+.user {
+    width: 40px;
 }
